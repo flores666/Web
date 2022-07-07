@@ -1,0 +1,305 @@
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	color: rgba(0,0,0,.8);
+    background: #e3e3e3;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: 370;
+	color: #2D2D2D;
+}
+
+h2 {
+	padding: 0px 0px 30px 0px;
+	font-size: 2.50em;
+}
+
+/*Scroll-Button*/
+
+.goTop{
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9;
+}
+
+.goTop a {
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  background-color: #1a1a1a;
+  display: block;
+  border-radius: 2px;
+}
+
+.goTop a span {
+  color: #f7f0f0;
+  font-size: 30px;
+  line-height: 42px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+.goTop:hover a span {
+    -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/*Menu*/
+
+#menu {
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    z-index: 1000;
+}
+
+#menu > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu > ul li a {
+    display: block;
+    background: #1a1a1a;
+    padding: 23px 40px 23px 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+    color: rgba(255,255,255,0.5);
+}
+
+#menu i.fa {
+    padding-left: 8px;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+    background: #262626;
+    box-shadow: 1px 5px 10px -5px #666;
+    transition: all 0.5s ease;
+}
+
+/*Sub-menu*/
+
+#menu li ul {
+    padding: 0;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    min-width: 300px;
+    display: none;
+}
+
+#menu li > ul li a {
+    padding: 15px;
+    text-transform: none;
+    background: #212121;
+}
+
+#menu li:hover > ul {
+    display: block;
+}
+
+/*Wrapper*/
+
+#wrapper {
+    background: #FFF;
+    margin: 0px 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+#wrapper p {
+    font-size: 17px;
+}
+
+#wrapper b {
+    font-weight: 600;
+}
+
+/*LOGO */
+
+#logo {
+	position: absolute;
+	left: 1em;
+}
+
+#logo h1 {
+	margin-top: 0.27em;
+	padding: 0;
+    letter-spacing: -1px;
+	text-transform: uppercase;
+	font-size: 2.3em;
+	color: whitesmoke;
+}
+
+/*Page*/
+
+#mainTitle h2 {
+    padding-top: 2.7em;
+    text-transform: uppercase;
+}
+
+.title h3 {
+    font-size: 29px;
+    font-weight: 399;
+    margin-top: 1em;
+}
+
+.column1,
+.column3,
+.column5,
+.column7{
+    float: left;
+    margin-right: 24px;
+    width: 700px;
+}
+
+/*1 block*/
+
+#info1 {
+    overflow: hidden;
+    padding-bottom: 3em;
+}
+
+.column2 img {
+    float: right;
+}
+
+/*2 block*/
+
+#info2 {
+    position: relative;
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 1px solid #e3e3e3;
+}
+
+.column3 img {
+    padding-bottom: 3em;    
+}
+
+/*3 block*/
+
+#info3 {
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 1px solid #e3e3e3;
+}
+
+#info3 img {
+    float: right;
+}
+
+/*4 block*/
+
+#info4 {
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 1px solid #e3e3e3;
+}
+
+#info4 img {
+    padding-bottom: 2em;
+}
+
+
+/*Teleports*/
+
+#career {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 60%;
+}
+
+#music {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 19%;
+}
+
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
