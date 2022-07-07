@@ -1,0 +1,11 @@
+#timer {
+    border: 1px solid black ;
+    text-align: center;
+    font-size: 40px;
+}
+ 
+#time {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
